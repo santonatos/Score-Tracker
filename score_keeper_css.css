@@ -1,0 +1,63 @@
+#keeperContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width:50%;
+    margin-left: 25%;
+    border-style:solid;
+    border-color: grey;
+
+}
+
+.containerItem{
+    width:100%;
+    border-style:solid;
+    border-color: grey;
+    border-radius: 1%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+
+#tImage{
+    width: 100%;
+    height: 100%;
+}
+
+#scoreKeeperSection{
+    display: flex;
+    flex-direction: column;
+}
+
+#scoreSection,#gameScoreSection{
+    margin-left: 5%;
+}
+
+.scoreLine{
+    display:inline;
+    margin-top:0px;
+}
+
+.scoreSelect{
+    display:inline;
+
+}
+
+
+.select.is-rounded{
+    margin-bottom: 3%;
+}
+
+
+#buttonsContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.button{
+    flex: 1 1 0;
+    border-radius: 10%;
+}
+

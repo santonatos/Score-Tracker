@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+    <link rel="stylesheet" href="score_keeper_css.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+<body>
+
+    <div id="keeperContainer">
+        <figure class="containerItem topImage" id="topImageContainer">
+            <img class = "topImage" id="tImage" 
+            src="https://images.unsplash.com/photo-1609710228159-0fa9bd7c0827?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGluZyUyMHBvbmd8ZW58MHx8MHx8&w=1000&q=80">
+        </figure>
+        <header class="containerItem header" id="headerContainer">
+            <h4 class="header" id="header">Ping Pong score keeper</h4>
+        </header>
+        <main class="containerItem scoreKeeperSection">
+            <section class="title is-1" id="scoreSection">
+                <h1 class="scoreLine" id="scoreP1">0</h3>                
+                <h3 class="scoreLine">to</h3>                
+                <h1 class="scoreLine" id="scoreP2">0</h3>                
+            </section>
+            <section id = "gameScoreSection">
+                <p class = "subtitle" id="buttonInstructions"> 
+                    Use the buttons below to keep score
+                </p>
+                <label for="maxScoreSelect" class="scoreSelect label is-large is-inline" id="selectInstructions">Playing to</label>
+                <div class="scoreSelect select is-rounded">
+                <select name="maxScore" id="maxScoreSelect">
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>    
+                    <option value="9">9</option>    
+                    <option value="10">10</option>    
+                </select>
+                </div>
+            </section>
+            <div id="buttonsContainer">
+                <button class="button is-primary" id="buttonP1">+1 Player One</button>
+                <button class="button is-info" id="buttonP2">+1 Player Two</button>
+                <button class="button is-danger" id="buttonReset">Reset</button>
+            </div>
+
+
+        </main>
+
+        
+
+
+    </div>
+    
+    <script src="score_keeper_js.js"></script>
+</body>
+</html>
